@@ -1,14 +1,14 @@
 import Navbar from "./Navbar";
 import { Cormorant_Garamond } from "next/font/google";
 
-const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: '500' });
+const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: "500" });
 
 const Header = () => {
   return (
-    <div className={`p-4 flex justify-between ${cormorant.style}`}>
-      <h1 className="text-xl text-accent-white">Adegbonmire Adeniyi</h1>
+    <header className={`p-4 flex md:flex-col justify-between ${cormorant.style} md:p-0 md:bg-accent-white`}>
+      <h1 className="text-xl text-accent-white md:text-3xl md:p-10 md:pt-[3rem] md:bg-darkest-blue">Adegbonmire Adeniyi</h1>
       <Navbar />
-    </div>
+    </header>
   );
 };
 export default Header;

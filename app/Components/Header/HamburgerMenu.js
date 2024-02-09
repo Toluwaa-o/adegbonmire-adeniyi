@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 const HamburgerMenu = ({ showNavBar, clickHandler }) => {
   const [show, setShow] = useState(false);
 
+  useEffect(() => {
+    setShow(showNavBar);
+  }, [showNavBar]);
+
   const myClickHandler = () => {
     setShow(!show);
     clickHandler(!show);

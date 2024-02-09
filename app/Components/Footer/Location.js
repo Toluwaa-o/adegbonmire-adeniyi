@@ -10,11 +10,11 @@ const roboto_condensed = Roboto_Condensed({
 
 export default function Location() {
   return (
-    <span className="flex justify-between flex-col gap-4 md:flex-row items-center md:items-start text-accent-white">
+    <span className="flex justify-between flex-col gap-4 items-center text-accent-white">
       <h3 className={`${roboto_condensed.className} uppercase text-xl`}>
         ONDO
       </h3>
-      <address className="not-italic md:hover:text-hoverColor transition-all">
+      <address className="not-italic md:hover:text-hoverColor transition-all md:block">
         Ondo State, Nigeria.
       </address>
       <span className="flex items-center gap-1 m-auto md:hover:text-hoverColor transition-all">
